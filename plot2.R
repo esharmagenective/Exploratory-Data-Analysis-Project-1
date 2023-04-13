@@ -8,7 +8,7 @@ str(data)
 dat<-subset(data,Date %in% c("1/2/2007","2/2/2007"))
 str(dat)
 
-## Graphing Plot 1
+## Graphing Plot 2
 png("plot2.png")
 dat$Global_active_power<-as.numeric(dat$Global_active_power)
 plot(dat$DateTime,dat$Global_active_power,type = "l", ylab = "Global Active Power (kilowatts)", xlab = " ")
